@@ -251,11 +251,11 @@ do
         local command3 = ";hat me 74891470"
         
         game:GetService("Players"):Chat(command)
-        wait(0.8)
+        wait(0.9)
         game:GetService("Players"):Chat(command1)
-        wait(0.8)
+        wait(0.9)
         game:GetService("Players"):Chat(command2)
-        wait(0.8)
+        wait(0.9)
         game:GetService("Players"):Chat(command3)
         Fluent:Notify({
                 Title = "",
