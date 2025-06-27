@@ -251,11 +251,11 @@ do
         local command3 = ";hat me 74891470"
         
         game:GetService("Players"):Chat(command)
-        wait(0.9)
+        wait(0.8)
         game:GetService("Players"):Chat(command1)
-        wait(0.9)
+        wait(0.8)
         game:GetService("Players"):Chat(command2)
-        wait(0.9)
+        wait(0.8)
         game:GetService("Players"):Chat(command3)
         Fluent:Notify({
                 Title = "",
@@ -568,9 +568,9 @@ do
         Callback = function()
           
             local mapBounds = {
-                XMin = -1500, XMax = 1500,
-                YMin = -1500, YMax = 1500,
-                ZMin = -500, ZMax = 500
+                XMin = -2000, XMax = 2000,
+                YMin = -2000, YMax = 2000,
+                ZMin = -1000, ZMax = 1000
             }
             
         
@@ -740,10 +740,11 @@ do
                 )
                 
       
+                local verticalBoost = math.random(0.5, 1.5)  
                 bv.Velocity = Vector3.new(
-                    math.random(-800, 800) * POWER_MULTIPLIER,
-                    math.random(300, 1200) * POWER_MULTIPLIER,
-                    math.random(-800, 800) * POWER_MULTIPLIER
+                    math.random(-100000, 100000) * POWER_MULTIPLIER,
+                    math.random(-80000, 120000) * POWER_MULTIPLIER * verticalBoost,
+                    math.random(-100000, 100000) * POWER_MULTIPLIER
                 )
                 
                
